@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Aventura</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>29xg90evnl3bg</unique-id>
+    <saved-with-version>26700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>850</width>
+        <height>450</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="obj_colision" sid="243415697073907">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="590102986275606">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492579505951989" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_player" sid="212623963493103">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="player_move" sid="458581228431124" type="string" />
+                <instance-variable name="gun_rate" sid="912684285315427" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="439734397547804">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="743699662736845">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="20" loop="1" name="IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="544024933636399" speed="5">
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_1.png" />
+                    <frame duration="1" hotspotX="0.503333" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_2.png" />
+                    <frame duration="1" hotspotX="0.503289" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_3.png" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_4.png" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_5.png" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_6.png" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_7.png" />
+                    <frame duration="1" hotspotX="0.503289" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_8.png" />
+                    <frame duration="1" hotspotX="0.50165" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_9.png" />
+                    <frame duration="1" hotspotX="0.503289" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_10.png" />
+                    <frame duration="1" hotspotX="0.503356" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_11.png" />
+                    <frame duration="1" hotspotX="0.503333" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_12.png" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_13.png" />
+                    <frame duration="1" hotspotX="0.503289" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_14.png" />
+                    <frame duration="1" hotspotX="0.503311" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_15.png" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_16.png" />
+                    <frame duration="1" hotspotX="0.503289" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_17.png" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_18.png" />
+                    <frame duration="1" hotspotX="0.503333" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_19.png" />
+                    <frame duration="1" hotspotX="0.503289" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_idle_20.png" />
+                </animation>
+                <animation framecount="16" loop="1" name="MOVE" pingpong="0" repeatcount="1" repeatto="0" sid="743277789233560" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_1.png" />
+                    <frame duration="1" hotspotX="0.501305" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_3.png" />
+                    <frame duration="1" hotspotX="0.501672" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_4.png" />
+                    <frame duration="1" hotspotX="0.501618" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_6.png" />
+                    <frame duration="1" hotspotX="0.501548" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_8.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_9.png" />
+                    <frame duration="1" hotspotX="0.501355" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_12.png" />
+                    <frame duration="1" hotspotX="0.501672" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_13.png" />
+                    <frame duration="1" hotspotX="0.501672" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_15.png" />
+                    <frame duration="1" hotspotX="0.501385" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_16.png" />
+                </animation>
+                <animation framecount="7" loop="0" name="JUMP" pingpong="0" repeatcount="1" repeatto="0" sid="399233876816001" speed="5">
+                    <frame duration="1" hotspotX="0.62536" hotspotY="0.993492" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_1.png" />
+                    <frame duration="1" hotspotX="0.580537" hotspotY="0.994329" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_2.png" />
+                    <frame duration="1" hotspotX="0.571429" hotspotY="0.994307" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_3.png" />
+                    <frame duration="1" hotspotX="0.571429" hotspotY="0.998099" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_4.png" />
+                    <frame duration="1" hotspotX="0.551948" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_5.png" />
+                    <frame duration="1" hotspotX="0.544554" hotspotY="1.00578" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_6.png" />
+                    <frame duration="1" hotspotX="0.587459" hotspotY="1.00391" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_7.png" />
+                </animation>
+                <animation framecount="8" loop="0" name="FALL" pingpong="0" repeatcount="1" repeatto="0" sid="397163757518764" speed="5">
+                    <frame duration="1" hotspotX="0.56229" hotspotY="0.998084" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_8.png" />
+                    <frame duration="1" hotspotX="0.56229" hotspotY="0.998062" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_9.png" />
+                    <frame duration="1" hotspotX="0.56229" hotspotY="0.998062" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_10.png" />
+                    <frame duration="1" hotspotX="0.56229" hotspotY="0.998058" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_11.png" />
+                    <frame duration="1" hotspotX="0.56229" hotspotY="0.998073" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_12.png" />
+                    <frame duration="1" hotspotX="0.561097" hotspotY="0.998055" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_13.png" />
+                    <frame duration="1" hotspotX="0.560411" hotspotY="0.997738" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_14.png" />
+                    <frame duration="1" hotspotX="0.561097" hotspotY="0.99789" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_jump_15.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="SHOOT" pingpong="0" repeatcount="1" repeatto="0" sid="606977405534818" speed="5">
+                    <frame duration="1" hotspotX="0.501587" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_stand_shoot.png">
+                        <image-point name="shoot" x="0.95873" y="0.643701" />
+                        <collision-poly>
+                            <point x="0.193651" y="0.122047" />
+                            <point x="0.501587" y="0.0137795" />
+                            <point x="0.774603" y="0.143701" />
+                            <point x="0.838095" y="0.501969" />
+                            <point x="0.749206" y="0.844488" />
+                            <point x="0.501587" y="0.988189" />
+                            <point x="0.387302" y="0.761811" />
+                            <point x="0.0920635" y="0.501969" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="AGACHAR" pingpong="0" repeatcount="1" repeatto="0" sid="896101712778583" speed="5">
+                    <frame duration="1" hotspotX="0.533113" hotspotY="0.96875" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_crouch.png" />
+                </animation>
+                <animation framecount="1" loop="1" name="HIT" pingpong="0" repeatcount="1" repeatto="0" sid="807079399209966" speed="5">
+                    <frame duration="1" hotspotX="0.506369" hotspotY="0.990119" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_hit_1.png" />
+                </animation>
+                <animation framecount="16" loop="0" name="SM" pingpong="0" repeatcount="1" repeatto="0" sid="290167386419490" speed="5">
+                    <frame duration="1" hotspotX="0.501493" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_1.png">
+                        <image-point name="shootmove" x="0.925373" y="0.631373" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_2.png">
+                        <image-point name="shootmove" x="0.945122" y="0.631579" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_3.png">
+                        <image-point name="shootmove" x="0.9653" y="0.649899" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501577" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_4.png">
+                        <image-point name="shootmove" x="0.962145" y="0.641434" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501567" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_5.png">
+                        <image-point name="shootmove" x="0.974922" y="0.665281" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_6.png">
+                        <image-point name="shootmove" x="0.969325" y="0.667364" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501484" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_7.png">
+                        <image-point name="shootmove" x="0.961424" y="0.680085" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501416" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_8.png">
+                        <image-point name="shootmove" x="0.968839" y="0.661123" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501305" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_9.png">
+                        <image-point name="shootmove" x="0.981723" y="0.663265" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501362" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_10.png">
+                        <image-point name="shootmove" x="0.980926" y="0.651394" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501493" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_11.png">
+                        <image-point name="shootmove" x="0.967164" y="0.656566" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_12.png">
+                        <image-point name="shootmove" x="0.97006" y="0.643426" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_13.png">
+                        <image-point name="shootmove" x="0.966667" y="0.696391" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501538" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_14.png">
+                        <image-point name="shootmove" x="0.969231" y="0.683084" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_15.png">
+                        <image-point name="shootmove" x="0.965625" y="0.668076" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\PNG&apos;s\r_run_shoot_16.png">
+                        <image-point name="shootmove" x="0.965409" y="0.648262" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="401839849384264">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="obj_colision2" sid="462797145050745">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="303271950901500">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="644812835651764">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758201301059518" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Sine Platform.png">
+                        <collision-poly>
+                            <point x="0.0078125" y="0.0147059" />
+                            <point x="0.992188" y="0.0147059" />
+                            <point x="0.992188" y="0.985294" />
+                            <point x="0.5" y="0.632353" />
+                            <point x="0.0078125" y="0.985294" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="161486399347070">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="obj_porta" sid="425484613473506">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694723361790950" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Background e Items\Objects\DoorLocked.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.957143" y="0.0258621" />
+                            <point x="1" y="0.5" />
+                            <point x="0.964286" y="0.978448" />
+                            <point x="0.5" y="0.997845" />
+                            <point x="0" y="1" />
+                            <point x="0.00357143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Background e Items\Objects\DoorUnlocked.png">
+                        <collision-poly>
+                            <point x="0.0462633" y="0.0280172" />
+                            <point x="0.498221" y="0" />
+                            <point x="0.953737" y="0.0280172" />
+                            <point x="0.996441" y="0.5" />
+                            <point x="0.960854" y="0.976293" />
+                            <point x="0.498221" y="0.997845" />
+                            <point x="0.0391459" y="0.976293" />
+                            <point x="0.00355872" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Background e Items\Objects\DoorOpen.png">
+                        <collision-poly>
+                            <point x="0.0428571" y="0.0258621" />
+                            <point x="0.5" y="0" />
+                            <point x="0.953571" y="0.0280172" />
+                            <point x="0.996429" y="0.5" />
+                            <point x="0.964286" y="0.978448" />
+                            <point x="0.5" y="0.997845" />
+                            <point x="0.0357143" y="0.978448" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_play" sid="473796384339601">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Touch" sid="249213696946158">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Mouse" sid="593325981070170">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="obj_inimigo1" sid="972817544906189">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="enemy_life" sid="363745492704052" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="951492391745577">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="114221486607877">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="12" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645485197581117" speed="6">
+                    <frame duration="1" hotspotX="0.387136" hotspotY="0.984756" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_000.png">
+                        <collision-poly>
+                            <point x="0.135922" y="0.170732" />
+                            <point x="0.640777" y="0" />
+                            <point x="0.995146" y="0.48374" />
+                            <point x="0.771844" y="0.97561" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.382924" hotspotY="0.967131" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_001.png">
+                        <collision-poly>
+                            <point x="0.135922" y="0.170732" />
+                            <point x="0.640777" y="0" />
+                            <point x="0.995146" y="0.48374" />
+                            <point x="0.585557" y="0.979594" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.416667" hotspotY="0.961278" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_002.png">
+                        <collision-poly>
+                            <point x="0.135922" y="0.170732" />
+                            <point x="0.640777" y="0" />
+                            <point x="0.966771" y="0.148937" />
+                            <point x="0.983241" y="0.634756" />
+                            <point x="0.599226" y="0.97561" />
+                            <point x="0" y="0.879961" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.407348" hotspotY="0.968518" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_003.png">
+                        <collision-poly>
+                            <point x="0.135922" y="0.170732" />
+                            <point x="0.640777" y="0" />
+                            <point x="0.990485" y="0.115944" />
+                            <point x="0.701216" y="0.457814" />
+                            <point x="0.797403" y="0.738572" />
+                            <point x="0.513718" y="1" />
+                            <point x="0" y="0.855555" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.353047" hotspotY="0.965899" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_004.png">
+                        <collision-poly>
+                            <point x="0.0143369" y="0.237091" />
+                            <point x="0.640777" y="0" />
+                            <point x="1" y="0.137196" />
+                            <point x="1" y="0.640127" />
+                            <point x="0.399642" y="1" />
+                            <point x="0.0286738" y="0.922581" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.369066" hotspotY="0.969754" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_005.png">
+                        <collision-poly>
+                            <point x="0" y="0.212319" />
+                            <point x="0.640777" y="0" />
+                            <point x="0.926493" y="0.185063" />
+                            <point x="0.990057" y="0.587898" />
+                            <point x="0.735091" y="0.934022" />
+                            <point x="0.0306279" y="0.984877" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.425445" hotspotY="0.985958" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_006.png">
+                        <collision-poly>
+                            <point x="0" y="0.467622" />
+                            <point x="0.345291" y="0.0762287" />
+                            <point x="0.648331" y="0" />
+                            <point x="0.907595" y="0.218945" />
+                            <point x="1" y="0.653446" />
+                            <point x="0.936003" y="1" />
+                            <point x="0.0656635" y="0.967904" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.387183" hotspotY="0.981" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_007.png">
+                        <collision-poly>
+                            <point x="0.0397941" y="0.318732" />
+                            <point x="0.549989" y="0" />
+                            <point x="0.831312" y="0.12987" />
+                            <point x="1" y="0.61574" />
+                            <point x="0.766504" y="1" />
+                            <point x="0.0106809" y="0.908" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.405819" hotspotY="0.977561" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_008.png">
+                        <collision-poly>
+                            <point x="0.154299" y="0.182439" />
+                            <point x="0.634651" y="0" />
+                            <point x="0.981623" y="0.148211" />
+                            <point x="1" y="0.698374" />
+                            <point x="0.747342" y="0.992195" />
+                            <point x="0" y="0.84" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.327869" hotspotY="0.993352" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_009.png">
+                        <collision-poly>
+                            <point x="0.0266327" y="0.223913" />
+                            <point x="0.640777" y="0" />
+                            <point x="1" y="0.112715" />
+                            <point x="0.652705" y="0.415364" />
+                            <point x="0.677127" y="0.857851" />
+                            <point x="0.429873" y="1" />
+                            <point x="0" y="0.820883" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.337955" hotspotY="0.989786" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_010.png">
+                        <collision-poly>
+                            <point x="0.0596658" y="0.211586" />
+                            <point x="0.640777" y="0" />
+                            <point x="0.963542" y="0.108165" />
+                            <point x="0.639514" y="0.372319" />
+                            <point x="0.979203" y="0.673964" />
+                            <point x="0.404426" y="0.819621" />
+                            <point x="0.375523" y="0.992572" />
+                            <point x="0.0277296" y="0.951718" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.352304" hotspotY="0.986842" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\PNG_Animations\Robot1\03_Walk\Walk_011.png">
+                        <collision-poly>
+                            <point x="0.135922" y="0.170732" />
+                            <point x="0.640777" y="0" />
+                            <point x="0.995146" y="0.48374" />
+                            <point x="0.549622" y="0.885385" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_restart" sid="897207937961894">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Level" sid="985616128781090">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Tempo" sid="333703592715437">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="item_vida_extra" sid="363545209735804">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="182833195947829" speed="5">
+                    <frame duration="1" hotspotX="0.503106" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\Vida Extra.png">
+                        <collision-poly>
+                            <point x="0.0372671" y="0.117949" />
+                            <point x="0.496894" y="0.00512821" />
+                            <point x="0.987578" y="0.0923077" />
+                            <point x="0.987578" y="0.907692" />
+                            <point x="0.496894" y="0.994872" />
+                            <point x="0.0372671" y="0.882051" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_colision_com_itens" sid="894311153004033">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="939596961611747">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614013798907596" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Level1_Barreira" sid="552340648889843">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="766501018402845">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944856078733465" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_JumpPad" sid="388400097499251">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Behavior" sid="810032653472683" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="NORMAL" pingpong="0" repeatcount="1" repeatto="0" sid="126117158880535" speed="5">
+                    <frame duration="1" hotspotX="0.518797" hotspotY="0.380846" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Sci-fi Platform\Blue\Blue platform 1.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="JUMP" pingpong="0" repeatcount="1" repeatto="0" sid="441248237811567" speed="5">
+                    <frame duration="1" hotspotX="0.50627" hotspotY="0.45471" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Sci-fi Platform\Blue\Blue platform 2.png">
+                        <collision-poly>
+                            <point x="0.110502" y="0.255435" />
+                            <point x="0.5" y="0.128623" />
+                            <point x="0.878527" y="0.280797" />
+                            <point x="0.944357" y="0.5" />
+                            <point x="0.880878" y="0.724638" />
+                            <point x="0.5" y="0.936594" />
+                            <point x="0.108934" y="0.748188" />
+                            <point x="0.0188088" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506452" hotspotY="0.454737" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="176732884179681">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Barreira_Inicial" sid="497667822686597">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635997358500628" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_bg" sid="184791181985675">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\industrial-background.jpg" />
+        </object-type>
+        <object-type name="tmp_bd_1" sid="396508285115014">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\scifi_platformTiles_32x32.png" />
+            <tiles />
+        </object-type>
+        <object-type name="obj_bullet" sid="862552010275168">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="434104844201609">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="BULLET" pingpong="0" repeatcount="1" repeatto="0" sid="250352943380940" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Bullet_000.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Bullet_001.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Bullet_002.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Bullet_003.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Bullet_004.png" />
+                </animation>
+                <animation framecount="5" loop="0" name="MERGE" pingpong="0" repeatcount="1" repeatto="0" sid="517684097011851" speed="10">
+                    <frame duration="1" hotspotX="-0.647059" hotspotY="0.535714" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Muzzle_000.png" />
+                    <frame duration="1" hotspotX="-0.647059" hotspotY="0.535714" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Muzzle_001.png" />
+                    <frame duration="1" hotspotX="-0.65" hotspotY="0.535211" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Muzzle_002.png" />
+                    <frame duration="1" hotspotX="-0.631579" hotspotY="0.536313" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Muzzle_003.png" />
+                    <frame duration="1" hotspotX="-0.631579" hotspotY="0.534979" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Player\png\Objects\Muzzle_004.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_barra_vida" sid="748394873238911">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="822178673175232">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207076530888302" speed="0">
+                    <frame duration="1" hotspotX="0.501587" hotspotY="0.501416" />
+                    <frame duration="1" hotspotX="0.50077" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.500373" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.500297" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Red_Bot_Hero\Barra de Vida.png">
+                        <collision-poly>
+                            <point x="0.0362448" y="0.177966" />
+                            <point x="0.50921" y="0.0819209" />
+                            <point x="0.970291" y="0.234464" />
+                            <point x="0.998218" y="0.898305" />
+                            <point x="0.50921" y="0.977401" />
+                            <point x="0.0380273" y="0.813559" />
+                            <point x="0.000594176" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_portal" sid="237214121575212">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="portal_animation" sid="715439036404437" type="string" />
+                <instance-variable name="ID_portal" sid="762181867836809" type="number" />
+                <instance-variable name="portalX" sid="177691421338356" type="number" />
+                <instance-variable name="portalY" sid="101247146475299" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="9" loop="0" name="OPEN" pingpong="0" repeatcount="0" repeatto="0" sid="217479344134106" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\doorSlidingSprite.png">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504425" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="STOP" pingpong="0" repeatcount="1" repeatto="0" sid="952052861963297" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+                <animation framecount="1" loop="0" name="FINAL" pingpong="0" repeatcount="1" repeatto="0" sid="157864302248816" speed="0">
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_portal2" sid="194732376140313">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="portal_animation" sid="306692602379186" type="string" />
+                <instance-variable name="ID_portal" sid="183620191310544" type="number" />
+                <instance-variable name="portalX" sid="728021310381102" type="number" />
+                <instance-variable name="portalY" sid="639343266466065" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="9" loop="0" name="OPEN" pingpong="0" repeatcount="1" repeatto="0" sid="224209705751013" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\doorSlidingSprite.png">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504425" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.108844" />
+                            <point x="0.0818965" y="0" />
+                            <point x="0.956896" y="0" />
+                            <point x="1" y="0.105442" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="STOP" pingpong="0" repeatcount="1" repeatto="0" sid="788024393043856" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+                <animation framecount="1" loop="0" name="FINAL" pingpong="0" repeatcount="1" repeatto="0" sid="858096454002006" speed="0">
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_switch" sid="962752803304398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275370085411438" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Background e Items\Objects\Switch (2).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.986111" y="0.00389105" />
+                            <point x="0.652778" y="0.498054" />
+                            <point x="0.652778" y="0.902724" />
+                            <point x="0.5" y="0.996109" />
+                            <point x="0.333333" y="0.906615" />
+                            <point x="0.333333" y="0.498054" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Leonardo\Documents\Games Development\Sprites\Plataforma - Sci Fi And Megaman Robot Background\Background e Items\Objects\Switch (1).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.986111" y="0.00389105" />
+                            <point x="0.638889" y="0.498054" />
+                            <point x="0.638889" y="0.898833" />
+                            <point x="0.5" y="0.996109" />
+                            <point x="0.333333" y="0.906615" />
+                            <point x="0.333333" y="0.498054" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_camera" sid="635542378159584">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="703571332799014">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142588436696408" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_zorder" sid="497961062062147">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160132323110088" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>global_gui.xml</layout>
+        <layout>Game_Over.xml</layout>
+        <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event Game.xml</event-sheet>
+        <event-sheet>Event Menu.xml</event-sheet>
+        <event-sheet>Event Game Over.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Touch" uid="15">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="16" />
+        <global-instance type="Function" uid="31" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

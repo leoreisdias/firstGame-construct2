@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Menu</name>
+    <events>
+        <event-group description="" sid="603462243365330" title="System">
+            <sub-events>
+                <event-block sid="177507141564812">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="893253389684993" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="682886748617959" type="Mouse">
+                            <param id="0" name="Object">txt_play</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="186719166044686" type="txt_play">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="943523164130457" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="169727961492410" type="txt_play">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="931575920679872">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="975279614631195" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="159266124846469" type="txt_play">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="523810565447824">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="197674981953834" type="Touch">
+                            <param id="0" name="Object">txt_play</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="788785075701876" type="System">
+                            <param id="0" name="Layout">Level 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

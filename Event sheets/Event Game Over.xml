@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Game Over</name>
+    <events>
+        <event-block sid="369973370203680">
+            <conditions>
+                <condition id="17" name="On tap object" sid="723750116928576" type="Touch">
+                    <param id="0" name="Object">txt_restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="117128358539553" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="573764846396075" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
